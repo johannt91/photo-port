@@ -10,9 +10,10 @@ describe('About component', () => { // declare component that is being tested
     it('renders', () => {
         render(<About />);
     });
+
     // Second Test
     it('mathces snapshot DOM node structure', () => {
         const { asFragment } = render(<About />);
         expect(asFragment()).toMatchSnapshot(); // expect() is used with a matcher to assert something about a value
-    })
+    });
 })
